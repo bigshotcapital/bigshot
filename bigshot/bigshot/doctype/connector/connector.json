@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-02-13 17:22:04.786192",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_exkn",
+  "states",
+  "first_name",
+  "email",
+  "column_break_skrm",
+  "payout",
+  "mobno",
+  "roles",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_exkn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Connector",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "states",
+   "fieldtype": "Select",
+   "label": "States",
+   "options": "New\nOnboarding Process\nAdmin Team Approval\nAttachments Of Docs\nDue Diligence Approval\nApproved"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First_Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_skrm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payout",
+   "fieldtype": "Currency",
+   "label": "Payout"
+  },
+  {
+   "fieldname": "mobno",
+   "fieldtype": "Phone",
+   "label": "Mob.No"
+  },
+  {
+   "fieldname": "roles",
+   "fieldtype": "Data",
+   "label": "Roles"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-14 10:40:25.764989",
+ "modified_by": "Administrator",
+ "module": "bigshot",
+ "name": "Connector",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Light Blue",
+   "title": "New"
+  },
+  {
+   "color": "Cyan",
+   "title": "Onboarding Process"
+  },
+  {
+   "color": "Orange",
+   "title": "Admin Team Approval"
+  },
+  {
+   "color": "Purple",
+   "title": "Attchment Of Docs"
+  },
+  {
+   "color": "Blue",
+   "title": "Due Diligence Approval"
+  },
+  {
+   "color": "Green",
+   "title": "Approved"
+  }
+ ]
+}
